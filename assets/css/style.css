@@ -295,3 +295,18 @@ address { font-style: normal; line-height: 1.7; }
   .timeline .yr { font-size: .82rem; }
   th, td { padding: 12px 14px; }
 }
+
+/* Emergency readiness: three-way verdict */
+.triage { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+.triage-item { background: #fff; border: 1px solid var(--line); border-top: 5px solid; border-radius: var(--radius-sm); padding: 18px 20px; }
+.triage-item h3 { font-size: 1.05rem; margin-bottom: .3em; }
+.triage-item p { margin: 0; font-size: .95rem; }
+.triage-item.t0 { border-top-color: #2e9e4f; }
+.triage-item.t1 { border-top-color: #e2a52b; }
+.triage-item.t2 { border-top-color: #d64545; }
+/* Parameters table and document cards */
+.params tbody th { background: var(--bg-alt); vertical-align: middle; }
+.params td:last-child { color: var(--ink); font-weight: 600; }
+.doc-card .btn { align-self: flex-start; margin-top: auto; }
+.doc-card p { margin-bottom: 18px; }
+@media (max-width: 880px) { .triage { grid-template-columns: 1fr; } }
